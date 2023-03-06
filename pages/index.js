@@ -31,7 +31,7 @@ export default function Home() {
 				<meta name='og:description' content={`${metadata.description}`} />
 			</Head>
 			{
-				apiKey !== null ?
+				apiKey !== null && typeof apiKey !== 'undefined' ?
 				<Generator />
 				:
 				<Authentication/>

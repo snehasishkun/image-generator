@@ -40,7 +40,7 @@ export default function Generator() {
 
     function getAPIKey() {
         const api_key = getCookie('igma.api_key');
-        if (!api_key || api_key === null || typeof api_key === 'undefined') return window.location.reload();
+        if (!api_key || api_key === null || typeof api_key === 'undefined') return setApiKey(null);
         setApiKey(api_key);
     }
 
