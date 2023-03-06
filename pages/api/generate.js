@@ -27,7 +27,7 @@ export default async function handler(req, res) {
 
   } catch (err) {
     console.log(err);
-    return res.json({ url: `${err.message||"Invalid API Key."}` });
+    return res.json({ message: `${err.message||"Invalid API Key."}` });
   }
 }
 
