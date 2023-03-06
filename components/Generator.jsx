@@ -113,6 +113,7 @@ export default function Generator() {
             justify={'center'}
             align={'center'}
             py={12}
+            px={4}
             >
             <Stack
             bg={useColorModeValue('gray.50', 'gray.700')}
