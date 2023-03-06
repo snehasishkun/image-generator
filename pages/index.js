@@ -35,7 +35,7 @@ export default function Home() {
                                 <meta name='og:image' content={`${metadata.image}`} />
                                 <meta name='og:image:height' content={`400`} />
                                 <meta name='og:image:width' content={`400`} />
-                                <link rel='shortcut icon' content={`${metadata.image}`} />
+                                <link rel='shortcut icon' href={`${metadata.image}`} />
 			</Head>
 			{
 				apiKey !== null && typeof apiKey !== 'undefined' ?
