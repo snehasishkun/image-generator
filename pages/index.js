@@ -7,7 +7,7 @@ import Head from 'next/head';
 const metadata = {
 	title: "Image Generator",
 	description: "Enter a prompt and I will generate an image for you.",
-	image: ""
+	image: "/igma.png"
 }
 
 export default function Home() {
@@ -27,8 +27,15 @@ export default function Home() {
 				<title>{metadata.title}</title>
 				<meta name='title' content={`${metadata.title}`} />
 				<meta name='description' content={`${metadata.description}`} />
+                                <meta name='image' content={`${metadata.image}`} />
+                                <meta name='image:height' content={`400`} />
+                                <meta name='image:width' content={`400`} />
 				<meta name='og:title' content={`${metadata.title}`} />
 				<meta name='og:description' content={`${metadata.description}`} />
+                                <meta name='og:image' content={`${metadata.image}`} />
+                                <meta name='og:image:height' content={`400`} />
+                                <meta name='og:image:width' content={`400`} />
+                                <link rel='shortcut icon' href={`${metadata.image}`} />
 			</Head>
 			{
 				apiKey !== null && typeof apiKey !== 'undefined' ?

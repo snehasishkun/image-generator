@@ -66,7 +66,7 @@ export default function Authentication() {
                 rounded={'xl'}
                 boxShadow={'lg'}
                 p={6}
-                my={12}>
+                my={12} mx={4}>
                 <Heading lineHeight={1.1} fontSize={{ base: '2xl', md: '3xl' }}>
                     Authentication
                 </Heading>
