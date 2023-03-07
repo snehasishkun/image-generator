@@ -19,7 +19,7 @@ import { FiLogOut } from 'react-icons/fi';
 
 const confettiConfig = {
     angle: 90,
-    spread: 100,
+    spread: 360,
     startVelocity: 40,
     elementCount: 70,
     dragFriction: 0.12,
