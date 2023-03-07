@@ -125,7 +125,8 @@ export default function Generator() {
             spacing={3}
             boxSize={"lg"}
             height={"fit-content"}>
-                <Flex justify={"right"} align={"flex-end"}>
+                <Flex justify={"space-between"} align={"flex-start"}>
+                    <Text fontSize={"2xl"} fontWeight={"bold"} color={"green.500"}>IMAGE GENERATOR</Text>
                     <IconButton variant={"ghost"} icon={FiLogOut} onClick={logout} />
                 </Flex>
                 <Stack align={'center'}>
