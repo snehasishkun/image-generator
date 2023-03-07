@@ -8,12 +8,14 @@ import {
     useToast,
     Image,
     Divider,
-    Link
+    Flex,
+    IconButton
 } from '@chakra-ui/react';
 import { deleteCookie } from 'cookies-next';
 import { useEffect, useState } from 'react';
 import { getCookie } from 'cookies-next';
 import Confetti from 'react-dom-confetti';
+import { FiLogOut } from 'react-icons/fi';
 
 const confettiConfig = {
     angle: 90,
@@ -122,6 +124,9 @@ export default function Generator() {
             spacing={3}
             boxSize={"lg"}
             height={"fit-content"}>
+                <Flex justify={"right"} align={"flex-end"}>
+                    <IconButton variant={"ghost"} icon={FiLogOut} onClick={logout} />
+                </Flex>
                 <Stack align={'center'}>
                     <Text fontSize={'lg'} color={'gray.500'}>
                         What do you wish to generate?
@@ -152,19 +157,6 @@ export default function Generator() {
                         onClick={generateImage}
                         isLoading={buttonLoading}>
                         Generate Image
-                    </Button>
-                </Stack>
-                <Stack direction={"row"}>
-                    <Button
-                        colorScheme={"red"}
-                        onClick={logout}
-                        rounded={"full"}>
-                        Logout
-                    </Button>
-                    <Button
-                        colorScheme={"blue"}
-                        rounded={"full"}>
-                        Information
                     </Button>
                 </Stack>
                 {
